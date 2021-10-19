@@ -1,6 +1,8 @@
 #body{
     margin-bottom: 100px;
     z-index: 900;
+    height: 100%;
+
 }
 #photoARC{
     position: static;
