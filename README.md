@@ -16,18 +16,10 @@ Debemos importar el archivo sql en la base de datos de  MYSQL WorkBench.
 
 Company esta formado por angular, asi que debemos tener el visual estudio y una vez clonado este repositorio hacer una intalación de las librerias que github no ha subido.
 
-This project contains 2 different parts:
-* Frontend
-* Backend
-
-You need a node.js working environment. The LTS is recommended: https://nodejs.org/es/
-
-Once you have cloned the project install all dependencies.
-
+Nos dirigimos a la terminar y ponemos los siguientes comandos:
 ```
 cd Ionic5NodeAuthBasic/frontend
 npm install
-
 cd Ionic5NodeAuthBasic/backend
 npm install
 ```
