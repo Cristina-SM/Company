@@ -1,0 +1,45 @@
+#body{
+    margin-bottom: 100px;
+    z-index: 900;
+}
+#photoARC{
+    position: static;
+    width: 100%;
+    height: 100%;
+}
+#title{
+   text-align: center;
+   font-family: sans-serif ;
+
+}
+.info{
+    background-color: #6678ec8f;
+    padding-bottom: 10px;
+}
+#description{
+    margin-left:50px;
+    margin-right: 50px;
+    text-align: justify;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.info2{
+    background-color: #6678EC;
+}
+#question{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color:white;
+    text-align: center;
+    font-family: sans-serif ;
+
+}
+.titleWorkers{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: sans-serif ;
+
+}
+

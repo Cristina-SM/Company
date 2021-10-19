@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+
+<body id="body">
+  <div class="col-12 user-img">
+    <img id="avatar" src="../../../assets/images/account/avatar.png" alt="avatar" />
+  </div>
+  <div class="col-sm-8 main-section">
+  <div class="modal-content ">
+    <form id="login" [formGroup]="login" (ngSubmit)="submit()">
+      <label for="email" id="emailText">Correo:</label>
+      <div class="form-group">
+        <input type="text" formControlName="email" placeholder="Tu email">
+        <div class="alert-danger">
+          <div class="container-error-message" *ngIf="email?.errors?.required">
+            Email obligatorio.
+          </div>
+          <div class="container-error-message" *ngIf="email?.errors?.pattern">
+            No es un email.
+          </div>
+        </div>
+      </div>
+      <label for="password" id="constraseñaText">Contraseña:</label>
+      <div class="form-group">
+        <input type="password" formControlName="password" placeholder="Contraseña"  name="password">
+        <div class="alert-danger">
+          <div class="container-error-message" *ngIf="password?.errors?.required">
+            Contraseña obligatoria.
+          </div>
+          <div class="container-error-message" *ngIf="password?.errors?.minlength">
+            Debe tener 4 caracteres.
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" id="button" [disabled]="!login.valid">Iniciar</button>
+    </form>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+.menu {
+  margin-top: 10%;
+  text-align: left;
+}
+#logout{
+  position: static;
+  margin-left: 90%;
+}
+#edit {
+  border: 1px solid black;
+  background-color: palevioletred;
+  margin-bottom: 10px;
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/user-male-circle.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+}
+
+#buy {
+  border: 1px solid black;
+  background-color: rgb(88, 255, 255);
+  margin-bottom: 10px;
+  background-image: url("https://img.icons8.com/external-kiranshastry-solid-kiranshastry/30/000000/external-shopping-bag-interface-kiranshastry-solid-kiranshastry.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+}
+
+#cancel {
+  border: 1px solid black;
+  background-color: rgb(255, 236, 131);
+  margin-bottom: 10px;
+  background-image: url("https://img.icons8.com/material-sharp/30/000000/cancel--v1.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+
+}
+
+#location {
+  border: 1px solid black;
+  background-color: rgb(106, 59, 167);
+  margin-bottom: 10px;
+  background-image: url("https://img.icons8.com/external-those-icons-fill-those-icons/30/000000/external-gps-maps-and-locations-those-icons-fill-those-icons.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+
+}
+
+#sales {
+  border: 1px solid black;
+  background-color: aquamarine;
+  margin-bottom: 10px;
+  background-image: url("https://img.icons8.com/material-rounded/30/000000/price-tag.png");
+  background-repeat: no-repeat;
+  background-position: 5px;
+
+}
+
+#txt {
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  color: black;
+}

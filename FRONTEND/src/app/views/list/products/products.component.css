@@ -1,0 +1,31 @@
+
+#products{
+    margin-bottom: 90px;
+}
+#product{
+    background-color:#B7B7B7 ;
+    border: 1px black solid;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#img{
+    
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+#search{
+    background-image: url("https://img.icons8.com/material-outlined/24/000000/search--v1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#txt{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.form-group{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

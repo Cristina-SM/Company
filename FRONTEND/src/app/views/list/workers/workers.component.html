@@ -1,0 +1,7 @@
+<carousel class="carousel" [height]="400" [width]="420" [cellsToShow]="1">
+    <div *ngFor="let Worker of Workers" id="worker" class="carousel-cell">
+        <img id="img" src={{Worker.image}}>
+        <p id="txt">Nombre: {{Worker.name}} </p>
+        <p id="txt">Descripción: {{Worker.description}} </p>
+    </div>
+</carousel>

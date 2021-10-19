@@ -1,0 +1,24 @@
+#img{
+    float: inline-start;
+    height: 250px;
+    width: 300px;
+}
+#worker{
+height: 100%;
+}
+#workers{
+    background-color: rgba(0, 132, 255, 0.609);
+}
+.carousel-cell{
+    background-color: rgba(53, 158, 255, 0.568);
+    text-align: center;
+}
+.carousel{
+    z-index: 900;
+}
+#txt{
+    margin-left: 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

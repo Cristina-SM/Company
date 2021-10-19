@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+
+  <div id="products">
+    <div class="form-group text-center">
+      <input id="search" type="text" class="forms-control" placeholder="Buscar..." [(ngModel)]="filterPost">
+    </div>
+    <div *ngFor="let Product of Products| filter: filterPost">
+      <div id="product">
+        <img id="img" src={{Product.image}} />
+        <p id="txt">Nombre: {{Product.name}} </p>
+        <p id="txt">Descripción: {{Product.description}} </p>
+        <p id="txt">Precio: {{Product.price}}€ </p>
+        <p id="txt">Cantidad: {{Product.lot}}</p>
+        <p id="txt">Codigo: {{Product.cod_Products}} </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

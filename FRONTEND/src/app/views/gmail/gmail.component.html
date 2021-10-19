@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+</head>
+
+<body id="body">
+  <div class="contenedor">
+    <img id="imgContact" src="/assets/images/Contact/contact.jpg" />
+    <h2 id="contact">Contacto</h2>
+  </div>
+  <p id = "txt">Te enviaremos un correo respondiendo su duda cuanto antes</p>
+  <form id="contactForm" [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
+    <p id="text">Nombre:</p>
+    <input type="text" formControlName="name" placeholder="Tu nombre">
+    <div class="alert-danger">
+      <div class="container-error-message" *ngIf="name?.errors?.required">
+        Nombre obligatorio.
+      </div>
+    </div>
+    <p id="text">Correo:</p>
+    <input type="text" formControlName="email" placeholder="Tu email">
+    <div class="alert-danger">
+      <div class="container-error-message" *ngIf="email?.errors?.required">
+        Email obligatorio.
+      </div>
+      <div class="container-error-message"
+        *ngIf="email?.errors?.pattern">
+        No es un email.    
+      </div>
+    </div>
+    <p id="text">Descripción:</p>
+    <textarea formControlName="message" placeholder="Escribe un mensaje"></textarea>
+    <div class="alert-danger">
+      <div class="container-error-message" *ngIf="message?.errors?.required">
+        Mensaje obligatorio.
+      </div>
+    </div>
+    <button type="submit" id="button" [disabled]="!contactForm.valid">Enviar</button>
+  </form>
+</body>
+
+</html>
