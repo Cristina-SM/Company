@@ -1,19 +1,37 @@
 
 # Company
 
-One Paragraph of the project description
+Company es una aplicacion para que los clientes puedan ver los productos a la venta, contactar con la empresa y iniciar sesion para visualizar los pedidos.
+Todo esto funciona gracia a las tres carpetas que están publicadas en estre repositorio.
 
-## Getting Started
+## BACKEND
 
-These instructions will give you a copy of the project up and running on
-your local machine for development and testing purposes. See deployment
-for notes on deploying the project on a live system.
+En este poyecto he elegido utilizar clipse IDE for Enterprise Java and Web Developers Version: 2021-06 (4.20.0) para la base de datos usando spring boot.
 
-### Prerequisites
+## DB_COMPANY
 
-Requirements for the software and other tools to build, test and push 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
+Debemos importar el archivo sql en la base de datos de  MYSQL WorkBench.
+
+## FRONTEND
+
+Company esta formado por angular, asi que debemos tener el visual estudio y una vez clonado este repositorio hacer una intalación de las librerias que github no ha subido.
+
+This project contains 2 different parts:
+* Frontend
+* Backend
+
+You need a node.js working environment. The LTS is recommended: https://nodejs.org/es/
+
+Once you have cloned the project install all dependencies.
+
+```
+cd Ionic5NodeAuthBasic/frontend
+npm install
+
+cd Ionic5NodeAuthBasic/backend
+npm install
+```
+
 
 ### Installing
 
